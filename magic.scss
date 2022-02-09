@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(magic1.jpg) ;
+    background-size: cover;
+    color:white;
+   
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+   // float: right;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 120px;
+
+}
+#left-h{
+    margin-left:100px;
+}
+.right{
+    float:right;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    text-align: center;
+    
+}
