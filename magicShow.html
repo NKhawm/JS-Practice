@@ -15,11 +15,20 @@
 </div>
 <div class="right">
     <h2>Welcome</h2>
-    <h3 id="right-h">Please enter your name and your age to get a special price</h3>
+    <h3 id="right-h">Please enter your name and your age <br> to get a special price</h3>
+    <div class="box">
+        <form name="myForm" method="post" action="#" onsubmit="return price()">
+        Name: <input type="text" id="name"><br><br><br>
+        Email: <input type="email" id="email"><br><br><br>
+        Age   : <input type="text" id="age"><br><br><br>
+        <input type="Submit" id="submit" value="submit">
+        
+    </form>
+</div>
 </div>
 
 </main>
 
-    
+    <script src="magic.js"></script>
 </body>
 </html>
