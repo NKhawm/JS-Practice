@@ -17,12 +17,16 @@
     <h2>Welcome</h2>
     <h3 id="right-h">Please enter your name and your age <br> to get a special price</h3>
     <div class="box">
-        <form name="myForm" method="post" action="#" onsubmit="return price()">
-        Name: <input type="text" id="name"><br><br><br>
-        Email: <input type="email" id="email"><br><br><br>
-        Age   : <input type="text" id="age"><br><br><br>
-        <input type="Submit" id="submit" value="submit">
-        
+        <form name="myForm">
+       <label for="Name">Name
+           <input type="text" id="name" placeholder="Enter your name">
+       </label><br><br><br>
+       <label for="email">Email
+           <input type="text" id="email" placeholder="Enter your email">
+       </label><br><br><br>
+       Age:
+       <input type="text" id="ageGroup"><br><br>
+       <input type="text"id="submit" value="submit" onclick="showPrice();">
     </form>
 </div>
 </div>
