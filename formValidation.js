@@ -29,9 +29,14 @@ if((fname==null) ||(fname=='') )
     return false;
 }
 
-else if(p_Word.lenght<6)
+if(p_Word.lenght<8)
 {
-    alert('password shoud be at least 6')
+    alert('password shoud be at least 8')
+    return false;
+}
+else if((p_Word==null) || (p_Word=='')|| (p_Word.trim()=''))
+{
+    alert('-passwor cannot be empty','-spaces are not allowed')
     return false;
 }
 var email1 = 'khawmhuai@gmail.com';
