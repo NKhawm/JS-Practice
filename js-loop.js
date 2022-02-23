@@ -62,7 +62,7 @@ for (var i=0;i<9;i++){
 
 
 //even numbers from m to n
-var m=1
+/*var m=1
 var n=10;
  for (let i=m; i<=n;i++){
      if( i%2 !==0){
@@ -76,7 +76,68 @@ for (i=0; i<20; i++){
        
         document.write(i + "<br></br>")
     }
+}*/
+
+//Calculate the factorial of number
+/*fact=1;
+for (i=5; i>=1; i--)
+{
+
+fact=fact*i
+document.write(fact+"<br></br>")
+}*/
+
+//calculate the factorial of number 1 to 10
+
+/*var fact =1;
+for (i=1 ; i<=10 ;i++)
+{
+    fact=fact*i
+    document.write(fact+'<br></br>')
 }
+
+
+let array =[1,2,3,4,5,6];
+var fact =1;
+
+for (a=0;a<array.length;a++)
+{
+    fact=fact*array[a]
+    document.write(fact+'<br></br>')
+}*/
+
+//nested for loop
+/*var b =[[1,2,3,4],[10,20,30,40]]
+for (g=0;g<=b.lenght;g++)
+  for(l=0;l<b[g].lenght;l++)
+    {
+      document.write([g][l] +'<br>');
+    }
+*/
+
+// Add elements of 2D array
+
+var a = [[1,2,3,],[4,5,6]];
+
+
+for (var i =0; i<a.length; i++)
+{
+   
+
+document.write("Array is " + a [i][0]+'<br>');
+//document.write("Array is " + a [i][1]+'<br>');
+//document.write("Array is " + a [i][2]+'<br>');
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
