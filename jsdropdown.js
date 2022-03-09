@@ -9,6 +9,17 @@ function myFunction(){
   var i =0;
   document.querySelector('#btn').addEventListener('click',function(){
       i = i < color.length ? ++i :0;
-      document.querySelector('section').style.background =color[i]
+      document.querySelector('#sec').style.background =color[i]
 
   })
+
+  //add row to table
+
+  function insert_Row(){
+      var x = document.getElementById('table').insertRow(0);
+      var y = x.insertCell(0);
+      var z = x.insertCell(1);
+      y.innerHTML = 'New Cell1';
+      z.innerHTML = 'New Cell2';
+
+  }

@@ -1,5 +1,5 @@
-section{
-    background-color: red;
+#sec{
+    background-color:lightpink;
     height: 50vh;
 }
 #btn{
@@ -8,4 +8,12 @@ section{
     height: 40px;
     margin-left: 180px;
     margin-top:20px ;
+}
+.myTable{
+    background-color: aquamarine;
+    margin-top: 20px;
+    
+}
+tr{
+    padding-top: 10px;
 }
