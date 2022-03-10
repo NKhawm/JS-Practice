@@ -1,6 +1,10 @@
 #sec{
     background-color:lightpink;
-    height: 50vh;
+    height: 30vh;
+    padding:10px;
+}
+h2{
+    text-align: center;
 }
 #btn{
     position: absolute;
@@ -12,8 +16,12 @@
 .myTable{
     background-color: aquamarine;
     margin-top: 20px;
+    padding:10px;
     
 }
-tr{
-    padding-top: 10px;
+.accept_row{
+    background-color: burlywood;
+    margin-top: 20px;
+    padding:10px;
 }
+
