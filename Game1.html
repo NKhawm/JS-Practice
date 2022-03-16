@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Game1.css">
+    <title>Guess The Number Game</title>
+</head>
+<body>
+    <div class="game">
+    <h2>Let's Play a Guessing Game!</h2>
+    <p>I am thinking of a number between 1 - 100. Can you guess what number it is?</p>
+    <br><br>
+    <form>
+    <label for="guess">Guess the number</label><br><br>
+    <input type="number" id="guess"><br><br>
+    <input type="submit" id="submitGuess" value="Check my guess">
+</form>
+<br>
+    <div id="result"></div>
+</div>
+
+<button type="submit" onclick="wdopen()">Submit</button>
+<button type="submit" onclick=" closeOpenedWindow()">Close</button>
+
+    
+   <script src="Game1.js"></script> 
+</body>
+</html>

@@ -57,7 +57,7 @@ document.write(d[day.getDay()] + '<br>');*/
 
 //1. Write a JS function to get the current date
 
-function current(){
+/*function current(){
     const d = new Date();
     alert('Today date is ' + d);
     
@@ -82,7 +82,7 @@ var monthName =function(dt){
     let months  = ['January', 'Feb', 'March', 'April','May','June', 'July', 'August', 'September', 'October', 'November','December'];
     return months[dt.getMonth()];
 };
-document.getElementById('day2').innerHTML = monthName(new Date("1/11/2011"));
+document.getElementById('day2').innerHTML = monthName(new Date("1/11/2011"));*/
 
 //document.getElementById('day2').innerHTML = monthName(new Date("12/11/2011"));
 
@@ -97,20 +97,48 @@ document.getElementById('day3').innerHTML = compare(new Date('11/12/2021 00:00')
 document.getElementById('day3').innerHTML = compare(new Date('11/12/2021 00:01')),(new Date('11/12/2021 00:00'));*/
  
 //another method
-function compareMe(){
+/*function compareMe(){
 var myDate = new Date();
 var myDate2 = new Date(2011,3,13)
-if(myDate.getTime() > myDate2.getTime())
+if(myDate.getTime() > myDate2.getTime()) // getTime convert your date to miliseconds to be able to compare.
 {
     document.getElementById('day3').innerHTML = 'Current date is bigger';
     
 }
 else{
     document.getElementById('day3').innerHTML = 'Current date is smaller';
+}
+}
+
+//5.Write a JS function to get difference between two dates in days.
+ var dateDiff = function(date1, date2){
+     dt1 = new Date(date1);
+     dt2 = new Date (date2);
+     //return Math.floor(Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) /(1000 * 60 * 60 * 24));
+     return Math.floor(dt1.getTime()-dt2.getTime() / (1000*60*60*24));
+
+
+ }
+ document.getElementById('day4').innerHTML = dateDiff("1/11/2011" , "2/12/2012");*/
+
+
+// calculate your age
+/*var today = prompt ("Enter today's date");
+var birthDate = prompt ("Enter your birth date");
+
+let age = today.getFullYear() - birthDate.getFullYear();
+let month = today.getMonth() - birthDate.getMonth();
+
+if (month < 0 || (month ===0 && today.getDate() < birthDate.getDate())){
+    age--;
+    document.getElementById('day5').innerHTML = 'Current date is bigger';
+}*/
     
 
-}
-}
+
+//set
+
+
 
 
 
