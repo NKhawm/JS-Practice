@@ -23,11 +23,17 @@ submitGuess.addEventlistener('click',checkGuess());*/
 
 //window ==> button ==> to open a new tab
 var openedWindow;
+var mywindow;
 function wdopen(){
    openedWindow = window.open('https://www.google.com/') //open in a new tab
     //window.open('https://www.google.com/','_parent')//open in the same tab
-
+   mywindow = window.open('https://www.google.com/',"","width=500px,height=700px")
 }
 function closeOpenedWindow(){ //close the tab
     openedWindow = openedWindow.close();
+
+}
+//scroll window
+function scrollWindow(){
+    window.scrollBy(0,20);
 }
