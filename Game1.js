@@ -35,5 +35,6 @@ function closeOpenedWindow(){ //close the tab
 }
 //scroll window
 function scrollWindow(){
-    window.scrollBy(0,20);
+    window.scrollBy(0,20); //scroll
+    //scrollTo // top ^
 }

@@ -1,11 +1,9 @@
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #444;
   line-height: 1.4;
   font-size: 16px;
@@ -14,37 +12,25 @@ html {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
   }
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
   }
 }
-
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 60px;
 }
 
@@ -68,48 +54,34 @@ button {
   border: 2px solid #1ecd97;
   color: #1ecd97;
   font-weight: 600;
-  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-
 .spin span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
 }
-
 .spin span:last-child {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-
 .spin svg {
   height: 30px;
   fill: #1ecd97;
 }
-
 .spin:hover {
   background-color: #1ecd97;
   color: #fff;
 }
-
 .spin.done, .spin.processing {
   pointer-events: none;
   cursor: default;
 }
-
 .spin.processing {
   width: 50px;
   border-width: 4px;
@@ -124,24 +96,18 @@ button {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-
 .spin.processing:hover {
   background-color: transparent;
 }
-
 .spin.processing span:first-child {
   opacity: 0;
 }
-
 .spin.done:hover {
   background-color: transparent;
 }
-
 .spin.done span:first-child {
   opacity: 0;
 }
-
 .spin.done span:last-child {
   opacity: 1;
-}
-/*# sourceMappingURL=submit.css.map */
+}/*# sourceMappingURL=submit.css.map */

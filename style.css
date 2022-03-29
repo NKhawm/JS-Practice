@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,15 +17,12 @@ h1 {
 }
 
 ul {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   margin-left: 150px;
   margin-top: 35px;
 }
-
 ul li {
   list-style: none;
   width: 60%;
@@ -36,16 +32,13 @@ ul li {
   padding-top: 100px;
   margin-bottom: 20px;
 }
-
 ul li a {
   text-decoration: none;
   font-size: 1.5em;
   color: black;
 }
-
 ul li a:hover {
   background-color: #037adb;
   border-radius: 100px;
   padding: 8px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
